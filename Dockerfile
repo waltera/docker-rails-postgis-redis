@@ -7,7 +7,7 @@ ENV APP_HOME /src
 RUN mkdir $APP_HOME
 WORKDIR $APP_HOME
 
-ENV REDIS_URL redis
+ENV REDIS_URL redis://redis
 
 COPY $SOURCE_HOME $APP_HOME
 COPY ./docker-entrypoint.sh /
